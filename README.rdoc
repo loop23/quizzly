@@ -1,6 +1,12 @@
 == README
 
-* Creiamo il model Quiz tramite il generator degli scaffold
+=== Creiamo il model Quiz tramite il generator degli scaffold
+
+Gia' fa parecchie cose! - Vediamo un po' la struttura dell'applicazione
 
 rails generate scaffold Quiz subject question:text image_url --stylesheet-engine=css --javascript-engine=js
 rake db:migrate
+
+=== Ok ma l'immagine non si vede! Vediamo come farla visualizzare; Questo ci da modo di parlare dell'html
+
+
