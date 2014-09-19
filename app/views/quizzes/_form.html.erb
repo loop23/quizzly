@@ -23,7 +23,18 @@
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
   </div>
+
+  <%= f.fields_for :answers do |answer_form| %>
+    <div>
+      <%= answer_form.label 'Testo:' %>
+      <%= answer_form.text_field :text %>
+      <%= answer_form.label 'Corretta?' %>
+      <%= answer_form.check_box :correct %>
+    </div>
+  <% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+  
 <% end %>

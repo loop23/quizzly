@@ -36,6 +36,20 @@ Nessuno! Aggiungiamo delle validazioni. Le validazioni sono (parte di) quello
 che in linguaggio serio si chiama "business logic" - anzi a essere precisi
 business rules (l'ho saputo ieri sera!)
 
+## Il fatto e' che vorremmo poter aggiungere le risposte tramite l'interfaccia web
+
+Prima correggiamo l'errore di sintassi che avevo fatto nel passo precedente sulle
+validazioni
+
+Dopodiche'.. Mi sembra una richiesta ragionevole!
+Per far questo, usiamo delle feature di rails che rendono piuttosto facile il tutto.
+Ma comunque e' il passo piu' lungo fatto finora! Ma prima parliamo un po' del controller.
+Iniziamo a dire al model che accetta attributi annidati; poi nella form di quiz
+aggiungiamo la f.fields_for... ; Nel controller dichiariamo che quiz accetta anche questi
+attributi, aggiungendoli ai quiz_params (qui si potrebbe parlare di sicurezza?);
+Infine Vorremmo che le risposte siano mostrate anche nella show del quiz, renderando @quiz.answers
+
+
 
 
 

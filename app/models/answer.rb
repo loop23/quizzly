@@ -1,6 +1,6 @@
 class Answer < ActiveRecord::Base
 
   belongs_to :quiz
-  validates_text presence: true
+  validate :text, presence: true
 
 end
