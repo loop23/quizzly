@@ -49,6 +49,17 @@ aggiungiamo la f.fields_for... ; Nel controller dichiariamo che quiz accetta anc
 attributi, aggiungendoli ai quiz_params (qui si potrebbe parlare di sicurezza?);
 Infine Vorremmo che le risposte siano mostrate anche nella show del quiz, renderando @quiz.answers
 
+## A questo punto vorremmo creare il front end; Niente paura, sara' meno orribile del backend!
+
+Potremmo anche mettere tutto dentro allo stesso controller, ma il modo pulito
+e' invece quello di creare un nuovo controller; Per ora e' prevedibile che si possano fare
+due cose: visualizzare una domanda a caso, o rispondere a una domanda.
+
+```
+rails generate controller FrontEnd question answer
+```
+
+Poi facciamo come dice: http://guides.railsgirls.com/app/ (a meno della parte dopo <body>, che non ci serve)
 
 
 

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'front_end/question'
+
+  get 'front_end/answer'
+
   resources :quizzes
 
   # The priority is based upon order of creation: first created -> highest priority.
