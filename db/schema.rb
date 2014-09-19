@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140919125408) do
 
   create_table "answers", force: true do |t|
     t.string   "text"
-    t.boolean  "corrent"
+    t.boolean  "correct"
     t.integer  "quiz_id"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -2,8 +2,8 @@
 
 one:
   text: MyString
-  corrent: false
+  correct: false
 
 two:
   text: MyString
-  corrent: false
+  correct: false

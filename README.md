@@ -26,8 +26,17 @@ Creiamo un model per le risposte: Answer.
 rails generate model Answer text:string correct:boolean
 ```
 
-Parliamo delle associazioni. Un quiz ha molte domande, e le domande appratengono
-ad un quiz. Modifichiamo quindi le classi generate e la migration
+Parliamo delle associazioni. Un quiz ha molte domande, e le domande appartengono
+ad un quiz. Modifichiamo quindi le classi generate e la migration.
+Ora possiamo giocare con la console e aggiungere risposte ai quiz
+
+## Ma che senso ha un quiz senza domanda, o una risposta senza testo?
+
+Nessuno! Aggiungiamo delle validazioni. Le validazioni sono (parte di) quello
+che in linguaggio serio si chiama "business logic" - anzi a essere precisi
+business rules (l'ho saputo ieri sera!)
+
+
 
 
 
