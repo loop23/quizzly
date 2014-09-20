@@ -1,10 +1,10 @@
 <h1><%= @quiz.subject %></h1>
 <h2><%= @quiz.question %></h2>
 <%= render partial: 'answer', collection: @quiz.answers %>
-<%= javascript_tag <<EOS
+<%#= javascript_tag <<EOS
 $(function() {
   $('.rispondi').click(function() {
-    window.location = "/front_end/answer?quiz_id=#{ @quiz.id }&answer_id=" + event.target["data-id"];
+    window.location = "/front_end/answer?quiz_id=#{ @quiz.id }&answer_id=" + event.target.data('id');
 		       return false;
  		       
 		       });

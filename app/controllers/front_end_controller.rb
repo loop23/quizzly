@@ -4,5 +4,7 @@ class FrontEndController < ApplicationController
   end
 
   def answer
+    @quiz = Quiz.first(params[:quiz_id])
+    @answer = Answer.find(params[:answer_id])
   end
 end
