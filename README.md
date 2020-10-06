@@ -2,6 +2,10 @@
 
 Una piccolissima app per RailsGirls Roma 2014
 
+# ATTENZIONE / WARNING
+
+Usa versione vecchia di rails. Ci sono buchi di sicurezza, non usare senza portare a rails 5.2.x
+
 ## Creiamo il model Quiz
 
 tramite il generator degli scaffold:
@@ -60,10 +64,3 @@ rails generate controller FrontEnd question answer
 ```
 
 Poi facciamo come dice: http://guides.railsgirls.com/app/ (a meno della parte dopo <body>, che non ci serve)
-
-
-
-
-
-
-
